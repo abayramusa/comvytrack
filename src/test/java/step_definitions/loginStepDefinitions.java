@@ -23,7 +23,7 @@ LoginPage loginPage=new LoginPage();
 
     @Then("the enters username and password then clicks on login button")
     public void the_enters_username_and_password_then_clicks_on_login_button() {
-    loginPage.username.sendKeys("Driver1");
+    loginPage.username.sendKeys("StoreManager1");
     loginPage.password.sendKeys("Cybertek1");
     loginPage.loginButton.click();
     }
