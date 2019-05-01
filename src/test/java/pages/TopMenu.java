@@ -11,10 +11,13 @@ public class TopMenu {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "(//span[@class='title title-level-1'])[2]//i")
+    @FindBy(xpath = "(//span[@class='title title-level-1'])[2]")
     public WebElement fleet;
 
     @FindBy(partialLinkText = "Vehicles Model")
     public WebElement vehicleModel ;
+
+    @FindBy(partialLinkText = "Create Vehicles Model")
+    public WebElement createvehicleModel;
 
 }

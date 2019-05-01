@@ -1,0 +1,109 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 30577793484,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "loginStepDefinitions.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1266814690,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "loginStepDefinitions.the_user_clicks_on_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6073140286,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the enters username and password then clicks on login button",
+            "match": {
+              "location": "loginStepDefinitions.the_enters_username_and_password_then_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Create vehicle model",
+        "description": "",
+        "id": "login-functionality;create-vehicle-model",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7150153075,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on the fleet",
+            "match": {
+              "location": "createVehicleStepDefinitions.user_clicks_on_the_fleet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5272791521,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on the vehicle model",
+            "match": {
+              "location": "createVehicleStepDefinitions.user_clicks_on_the_vehicle_model()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5156980932,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on hte create vehicle model",
+            "match": {
+              "location": "createVehicleStepDefinitions.user_clicks_on_hte_create_vehicle_model()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@createvehicle"
+          }
+        ]
+      }
+    ],
+    "name": "login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
