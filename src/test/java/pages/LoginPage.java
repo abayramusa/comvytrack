@@ -1,5 +1,6 @@
 package pages;
 
+import Utility.ConfigurationReader;
 import Utility.Driver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,6 +25,17 @@ public class LoginPage {
 
     @FindBy(id= "_submit")
     public WebElement loginButton;
+
+    public void loginPage(){
+        login.click();
+        username.sendKeys(ConfigurationReader.getProperty("username"));
+        password.sendKeys(ConfigurationReader.getProperty("password"));
+        loginButton.click();
+    }
+
+    public void open(){
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+    }
 
 
 

@@ -1,6 +1,7 @@
 package step_definitions;
 
 import Utility.Driver;
+import Utility.Pages;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -8,11 +9,13 @@ import pages.LoginPage;
 
 public class loginStepDefinitions {
 
+    protected Pages pages = new Pages();
 LoginPage loginPage=new LoginPage();
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
-        Driver.getDriver().get("http://vytrack.com/");
+      //  Driver.getDriver().get("http://vytrack.com/");
+pages.login().open();
 
     }
 
