@@ -5,7 +5,7 @@ Feature: login functionality
   When the user clicks on the login button
   Then the enters username and password then clicks on login button
 
-  @createvehicle
+  @wip
   Scenario: Create vehicle model
     When user clicks on the fleet
     Then user clicks on the vehicle model
